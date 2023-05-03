@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DA6B95C8-3276-9269-B255-F5EE88DA9635" name="Konidisi">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 15:27:25 UTC</createdTime>
+<ownerDesignName>agam</ownerDesignName>
+<engineerTo>
+<item key="278C0BF3-663D-F648-FB00-52ABB6C693CC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Kondisi" id="8957CFEB-0272-76FE-9302-17CBC821B4D9">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 15:27:31 UTC</createdTime>
+<ownerDesignName>agam</ownerDesignName>
+<engineerTo>
+<item key="278C0BF3-663D-F648-FB00-52ABB6C693CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Kondisi" id="691160A1-CE9E-DC15-03C9-18255B6487EB">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 15:27:43 UTC</createdTime>
+<ownerDesignName>agam</ownerDesignName>
+<engineerTo>
+<item key="278C0BF3-663D-F648-FB00-52ABB6C693CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Catatan" id="0FF71A12-111C-A817-6F8E-CF4F063A1FAA">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 15:30:39 UTC</createdTime>
+<ownerDesignName>agam</ownerDesignName>
+<engineerTo>
+<item key="278C0BF3-663D-F648-FB00-52ABB6C693CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9A6A8D0C-B423-7470-B6E7-8BE9A926C41B" name="Konidisi PK">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 15:27:41 UTC</createdTime>
+<ownerDesignName>agam</ownerDesignName>
+<engineerTo>
+<item key="278C0BF3-663D-F648-FB00-52ABB6C693CC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8957CFEB-0272-76FE-9302-17CBC821B4D9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

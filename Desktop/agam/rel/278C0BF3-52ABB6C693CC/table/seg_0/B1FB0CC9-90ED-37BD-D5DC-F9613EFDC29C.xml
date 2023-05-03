@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B1FB0CC9-90ED-37BD-D5DC-F9613EFDC29C" name="Pelanggan">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>B0797170-D5F1-89E2-BE2D-E577CE304E1A</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Pelanggan" id="752613E4-1A5D-638D-DA96-F6666545E97F">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>6F22D9B8-6691-28DD-54DB-A6882C65012F</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nomor_Identitas_Pelanggan" id="29B68777-9A80-6F98-64A8-DCCA511C6150">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>22126A5A-6806-9907-089D-42A21BD5A5EA</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nama" id="7BEE2F37-2215-22AC-AED5-0617B90C59B0">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>FD402CD8-739C-D631-FD5A-1C297B888E23</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="No_Telepon" id="B42E8D62-E839-95DF-26DC-14BA404C1D54">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>793A6C91-5419-EB42-F496-C84F666D4E91</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Alamat_ID_Alamat" id="EF781D95-D464-3AC5-C0A8-09FC6D923B75">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>871E0B66-FC8C-5B99-E378-DFB2302C8F70</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8F6C9BDE-3B57-09E3-6DDB-CA1D7633194E" referredColumn="D6C90924-3092-27C1-3FF8-1AA10BBE05ED"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2E19BF68-5D74-CEB4-FACF-DB94F8B0FEBB" name="Pelanggan_PK">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>74AB8BB3-DD54-6726-06F0-EAB1CAD80F18</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="752613E4-1A5D-638D-DA96-F6666545E97F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F645FD0B-A8F8-05F4-3607-4A9FBC75BBEC" name="Pelanggan_Nomor_Identitas_Pelanggan_UN">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>EBDA2C0D-E734-9B30-52BE-F53EF6256E9B</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="29B68777-9A80-6F98-64A8-DCCA511C6150"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="845C83BA-8774-4F61-1129-2D7E2E57BC25" name="Pelanggan_Alamat_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>1C36E381-8022-3035-7D5C-77CF381F8B63</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EF781D95-D464-3AC5-C0A8-09FC6D923B75"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9310B482-248F-1428-750B-4B16A1358F9D" name="Jenis_Layanan">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>A599C81F-26EF-63AC-0A81-4C5252B9524E</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Jenis_layanan" id="6B441F14-8F2D-7301-CC51-32820AD9C8FF">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>F7157835-E4D6-8623-27C0-559EFD6E8F2A</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tipe_Jenis_Layanan" id="0C902CBC-A2FD-0EEB-F00D-05B507B309F9">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>1403423F-DE22-43F2-41C4-A2D8C80D877B</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Keterangan" id="73D64207-B805-C2B8-11AA-8CCC659ACBC3">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>A92FDEB1-1BAD-9534-D692-3F86C11A0B21</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Harga" id="5E622F27-6D82-EBA9-3468-2579F91FF6BB">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>5351F980-7902-DAB2-126D-FF532FCBF608</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B7CAC029-3D93-E6DA-1E78-7DB0147CD04C" name="Jenis_Layanan_PK">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>832809C2-5263-C792-21BB-0234860E05B5</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6B441F14-8F2D-7301-CC51-32820AD9C8FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

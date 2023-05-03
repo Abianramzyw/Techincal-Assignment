@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="800B9B98-F4E2-42C0-36F8-2B777D1B34B3" name="Alamat">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>9D9D9D77-F3E4-5ED1-30F1-AD2DD5BF8760</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Alamat" id="D6C90924-3092-27C1-3FF8-1AA10BBE05ED">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>BADC4500-7043-CCEA-D6AD-3E29FD7B9C16</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nomor_Rumah" id="C3B6855C-1011-2909-ACCE-AA869C888328">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>6B9F22BF-2E9F-8259-89E2-F42EADB84937</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Jalan_ID_Jalan" id="0120BEE1-2DFA-3E2F-472B-ACED842972BB">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>30D19039-472C-7426-92D6-3C5D8EBCA9EB</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="72CD7863-82EC-350B-E852-1D3C471576AB" referredColumn="6176145E-FE23-F2A0-E801-2DF0B1C4F2E8"/>
+</associations>
+</Column>
+<Column name="Kota_ID_Kota" id="13E68D6F-321E-89AE-71F3-770950C10F9A">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>F140C842-961C-7E02-AEDE-692D44838C4E</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C18D57CF-434D-DF22-45D1-7A8F453CF32C" referredColumn="07F76341-F541-6B54-480D-5F711B26D08B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C961AD35-A5F6-99B9-02AF-62BFDDA5C8DC" name="Alamat_PK">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>AF8075D7-0576-4C98-13CC-0A4F73C52FB6</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D6C90924-3092-27C1-3FF8-1AA10BBE05ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="28CD6B33-E239-29E9-8B57-FCC346A3C9AC" name="Alamat_Jalan_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>F1ECE1BB-E707-9B26-4615-9CCF5233750E</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0120BEE1-2DFA-3E2F-472B-ACED842972BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D41B8CF4-63FD-B911-73E1-991550B96AB0" name="Alamat_Kota_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>AF3FEAC9-11F2-6A82-21E4-71E6EB9D849F</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="13E68D6F-321E-89AE-71F3-770950C10F9A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

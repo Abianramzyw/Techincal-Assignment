@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8CCEDC2D-48C7-16D3-2A69-71675C2FC973" name="Warna">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>30A6DB7E-6B18-124F-000D-68B2BE5891F4</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Warna" id="D3D64C38-E473-7AD9-864F-AED19483B2F7">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>8A7BF705-F880-6F6B-AE37-196574A67E6D</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Warna" id="94602D0C-5BD5-BFC5-A5F5-2E8419753552">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>2E8B264E-E726-7F82-5E2E-EF104E4E95B4</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2922FFD0-5FEB-8F22-EDA3-1A86BDC8BD5B" name="Warna_PK">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>635B6909-2529-77B3-E3F4-85A3F3314409</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3D64C38-E473-7AD9-864F-AED19483B2F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

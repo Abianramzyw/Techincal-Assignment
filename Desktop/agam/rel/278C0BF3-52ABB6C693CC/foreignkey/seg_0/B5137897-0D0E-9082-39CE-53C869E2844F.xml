@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B5137897-0D0E-9082-39CE-53C869E2844F" containerWithKeyObject="4E5000C9-B8D2-B382-1BE8-83473AB7B5B7" localFKIndex="FA900268-5E1E-FA80-0D62-EC97716B3E22" name="Pemesanan_Sopir_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>199E1039-BE7F-3A08-209B-26FBF85B420F</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<referredTableLongName>Sopir</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>92B91917-3301-A042-2691-C14549151378</referredTableID>
+<keyObject>EBB0825C-B258-8971-990B-D0A3729711E6</keyObject>
+<referredKeyID>EBB0825C-B258-8971-990B-D0A3729711E6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Sopir</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

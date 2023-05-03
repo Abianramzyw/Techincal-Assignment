@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4E5000C9-B8D2-B382-1BE8-83473AB7B5B7" name="Pemesanan">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>65E9D8FD-E3D6-9BED-9BCF-9A57F131D7C3</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Nomor_Pemesanan" id="B7F93F64-665D-E7B5-C71B-694D588E0A76">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>C4CFC5D9-CD4A-9BC5-98B9-1E790272CAAB</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tanggal_Pemesanan" id="0909D4A5-514C-3D69-76AD-940D628CB0CF">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>0BE02BBD-9E29-1ABF-C7F8-3E32EA24E32D</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tanggal_Pengambilan" id="C96D304E-CB58-AA57-34F4-A3D86FC113F2">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>77EC766C-46D7-8B3A-8D67-398CE966CA4C</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tanggal_Pengembalikan" id="F7EC253C-B2F1-7237-1F03-6BFB0736A5B5">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>A96EAF41-A20D-801A-A97F-5A3E189FDF56</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Mobil_ID_Mobil" id="0753CAD6-C146-FDD0-2537-7ED717A665D0">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>91E7561D-3948-3F0D-C7A9-52355FF7B18F</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9A6FF59A-7346-11CD-DC04-AD031645B4C8" referredColumn="632D1E20-17C7-CF8D-613E-6FB214F0ECE6"/>
+</associations>
+</Column>
+<Column name="Jenis_Layanan_ID_Jenis_layanan" id="CE8F3A3F-BA5D-4FBB-0357-D31325A7E6CD">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>BE246CC2-D8F2-4E95-EAEE-500DC07C0129</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0B014F99-D3E2-4791-5F27-C369A6A38734" referredColumn="6B441F14-8F2D-7301-CC51-32820AD9C8FF"/>
+</associations>
+</Column>
+<Column name="Sopir_ID_Sopir" id="64CBA903-BE4E-BB0D-0EC0-837FF8D206F4">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>CACFD1DA-4BF5-8FEC-8A19-DB7202ADD799</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B5137897-0D0E-9082-39CE-53C869E2844F" referredColumn="E3D82804-AFE6-1214-08AA-457B69BCC768"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B6A2D3BF-7D3A-2B5A-3CDD-5BD7765CD8EE" name="Pemesanan_PK">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>CDA7977E-C63A-9E4C-41AC-77AFFE58E775</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B7F93F64-665D-E7B5-C71B-694D588E0A76"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D3C725D3-A7BD-1CD4-EA9B-EAD49DF2AE78" name="Pemesanan_Jenis_Layanan_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>52C5608C-68E0-50DC-1FC4-BCF84DACABB3</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE8F3A3F-BA5D-4FBB-0357-D31325A7E6CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FA900268-5E1E-FA80-0D62-EC97716B3E22" name="Pemesanan_Sopir_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>199E1039-BE7F-3A08-209B-26FBF85B420F</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64CBA903-BE4E-BB0D-0EC0-837FF8D206F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7FCF5EF8-59D1-783E-DC18-EC323CB602F6" name="Pemesanan_Mobil_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>BB7D4370-729C-596C-014F-BDB261CADD38</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0753CAD6-C146-FDD0-2537-7ED717A665D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

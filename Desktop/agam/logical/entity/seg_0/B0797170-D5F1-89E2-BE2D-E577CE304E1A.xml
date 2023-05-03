@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B0797170-D5F1-89E2-BE2D-E577CE304E1A" name="Pelanggan">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 15:33:22 UTC</createdTime>
+<ownerDesignName>agam</ownerDesignName>
+<engineerTo>
+<item key="278C0BF3-663D-F648-FB00-52ABB6C693CC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Pelanggan" id="6F22D9B8-6691-28DD-54DB-A6882C65012F">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 15:33:28 UTC</createdTime>
+<ownerDesignName>agam</ownerDesignName>
+<engineerTo>
+<item key="278C0BF3-663D-F648-FB00-52ABB6C693CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nomor_Identitas_Pelanggan" id="22126A5A-6806-9907-089D-42A21BD5A5EA">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 15:33:49 UTC</createdTime>
+<ownerDesignName>agam</ownerDesignName>
+<engineerTo>
+<item key="278C0BF3-663D-F648-FB00-52ABB6C693CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nama" id="FD402CD8-739C-D631-FD5A-1C297B888E23">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 15:35:00 UTC</createdTime>
+<ownerDesignName>agam</ownerDesignName>
+<engineerTo>
+<item key="278C0BF3-663D-F648-FB00-52ABB6C693CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="No_Telepon" id="793A6C91-5419-EB42-F496-C84F666D4E91">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 15:35:13 UTC</createdTime>
+<ownerDesignName>agam</ownerDesignName>
+<engineerTo>
+<item key="278C0BF3-663D-F648-FB00-52ABB6C693CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Alamat" id="871E0B66-FC8C-5B99-E378-DFB2302C8F70">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 15:59:35 UTC</createdTime>
+<generatorID>1C36E381-8022-3035-7D5C-77CF381F8B63</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<engineerTo>
+<item key="278C0BF3-663D-F648-FB00-52ABB6C693CC" value="true"/>
+</engineerTo>
+<referedAttribute>BADC4500-7043-CCEA-D6AD-3E29FD7B9C16</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="74AB8BB3-DD54-6726-06F0-EAB1CAD80F18" name="Pelanggan PK">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 15:33:47 UTC</createdTime>
+<ownerDesignName>agam</ownerDesignName>
+<engineerTo>
+<item key="278C0BF3-663D-F648-FB00-52ABB6C693CC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6F22D9B8-6691-28DD-54DB-A6882C65012F</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="EBDA2C0D-E734-9B30-52BE-F53EF6256E9B" name="Key_2">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 15:36:06 UTC</createdTime>
+<ownerDesignName>agam</ownerDesignName>
+<engineerTo>
+<item key="278C0BF3-663D-F648-FB00-52ABB6C693CC" value="true"/>
+</engineerTo>
+<newElementsIDs>22126A5A-6806-9907-089D-42A21BD5A5EA</newElementsIDs>
+<usedAttributes>
+<attributeRef>22126A5A-6806-9907-089D-42A21BD5A5EA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

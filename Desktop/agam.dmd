@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="agam" id="9EAEF519-7088-4BC2-9DB1-F26E07F266DA" version="3.5">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 15:07:23 UTC</createdTime>
+<ownerDesignName>agam</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>9EAEF519-7088-4BC2-9DB1-F26E07F266DA</designId>
+</OSDM_Design>

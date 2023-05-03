@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9D9D9D77-F3E4-5ED1-30F1-AD2DD5BF8760" name="Alamat">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 15:42:40 UTC</createdTime>
+<ownerDesignName>agam</ownerDesignName>
+<engineerTo>
+<item key="278C0BF3-663D-F648-FB00-52ABB6C693CC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Alamat" id="BADC4500-7043-CCEA-D6AD-3E29FD7B9C16">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 15:42:57 UTC</createdTime>
+<ownerDesignName>agam</ownerDesignName>
+<engineerTo>
+<item key="278C0BF3-663D-F648-FB00-52ABB6C693CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nomor_Rumah" id="6B9F22BF-2E9F-8259-89E2-F42EADB84937">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 15:43:20 UTC</createdTime>
+<ownerDesignName>agam</ownerDesignName>
+<engineerTo>
+<item key="278C0BF3-663D-F648-FB00-52ABB6C693CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Jalan" id="30D19039-472C-7426-92D6-3C5D8EBCA9EB">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 15:59:43 UTC</createdTime>
+<generatorID>F1ECE1BB-E707-9B26-4615-9CCF5233750E</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<engineerTo>
+<item key="278C0BF3-663D-F648-FB00-52ABB6C693CC" value="true"/>
+</engineerTo>
+<referedAttribute>6B4FF4F7-FADC-7543-CECA-DE63D8166576</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Kota" id="F140C842-961C-7E02-AEDE-692D44838C4E">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 15:59:52 UTC</createdTime>
+<generatorID>AF3FEAC9-11F2-6A82-21E4-71E6EB9D849F</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<engineerTo>
+<item key="278C0BF3-663D-F648-FB00-52ABB6C693CC" value="true"/>
+</engineerTo>
+<referedAttribute>8B655212-291C-166E-DC8F-44EADD66E48A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AF8075D7-0576-4C98-13CC-0A4F73C52FB6" name="Alamat PK">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 15:43:14 UTC</createdTime>
+<ownerDesignName>agam</ownerDesignName>
+<engineerTo>
+<item key="278C0BF3-663D-F648-FB00-52ABB6C693CC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BADC4500-7043-CCEA-D6AD-3E29FD7B9C16</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

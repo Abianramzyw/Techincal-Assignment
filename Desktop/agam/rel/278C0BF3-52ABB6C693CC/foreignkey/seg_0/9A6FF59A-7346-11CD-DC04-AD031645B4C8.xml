@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9A6FF59A-7346-11CD-DC04-AD031645B4C8" containerWithKeyObject="4E5000C9-B8D2-B382-1BE8-83473AB7B5B7" localFKIndex="7FCF5EF8-59D1-783E-DC18-EC323CB602F6" name="Pemesanan_Mobil_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>BB7D4370-729C-596C-014F-BDB261CADD38</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<referredTableLongName>Mobil</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8B6570E4-2A36-2DD8-20DC-1AD6254A2EC7</referredTableID>
+<keyObject>C887BC51-74D0-E655-1A24-B88F29F5232C</keyObject>
+<referredKeyID>C887BC51-74D0-E655-1A24-B88F29F5232C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Mobil</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

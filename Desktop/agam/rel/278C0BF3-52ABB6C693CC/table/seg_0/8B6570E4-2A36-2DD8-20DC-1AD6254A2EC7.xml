@@ -1,0 +1,174 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8B6570E4-2A36-2DD8-20DC-1AD6254A2EC7" name="Mobil">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>04EA56ED-B4C7-7879-319E-557646940C63</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Mobil" id="632D1E20-17C7-CF8D-613E-6FB214F0ECE6">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>22C2AA7B-1B54-2011-C1E7-F1D71871CC03</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="No_Polisi" id="6016458A-8AA2-D693-9B70-6BEEC0E4D186">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>9FF07FAB-C1C1-283D-7DEC-AC7353BBA85D</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tahun" id="08E75A7C-2002-8C41-7269-417382923218">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>020F645B-1917-19BE-9199-C15E81666121</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Konidisi_ID_Kondisi" id="017E6F1C-5574-E62E-7E9D-50106B7FC537">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>2A61A879-BBCB-8C90-7C47-9595B0D4A316</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6A4A08C4-9BB9-5DBB-05D3-DBDF1E0D5C3B" referredColumn="8C8850CE-87AC-4A8A-2411-286227068AE5"/>
+</associations>
+</Column>
+<Column name="Warna_ID_Warna" id="D8D378AE-E3C2-9236-1472-7828C1F5C81A">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>E5F02CFE-BA17-CA14-AE43-39206D12F5A4</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D88E55B7-DBA3-5D6D-B907-33861F186DC1" referredColumn="D3D64C38-E473-7AD9-864F-AED19483B2F7"/>
+</associations>
+</Column>
+<Column name="Merk_ID_Merk" id="5020F647-4957-4B69-7201-22CC5DD6A0DE">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>AA9E3EC3-F42D-116B-38F3-9E8C71F87986</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="696B9398-9EBC-834B-8588-25F1FAA241C5" referredColumn="D62A8392-53F4-BBD0-0167-8864BEA851B5"/>
+</associations>
+</Column>
+<Column name="Pelanggan_ID_Pelanggan" id="2BA7F1E0-38ED-FC89-9A7E-5C736E3DDDCF">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>EA6780F9-A745-51B5-7BB3-B2C5B25FB429</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="41580CEE-5BA2-B5F7-893C-5D9D5070F03A" referredColumn="752613E4-1A5D-638D-DA96-F6666545E97F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C887BC51-74D0-E655-1A24-B88F29F5232C" name="Mobil_PK">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>98E583D1-6264-520B-B734-988F3EE14C32</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="632D1E20-17C7-CF8D-613E-6FB214F0ECE6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9C0497BC-65C5-0378-C9C2-E62A1BC22F0C" name="Mobil_No_Polisi_UN">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>D024EB94-4C03-5ED5-DDC5-FAFC69D74808</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6016458A-8AA2-D693-9B70-6BEEC0E4D186"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BF369C88-7413-DA99-2E5F-0FF73FC5E473" name="Mobil_Konidisi_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>B6803D20-2BFB-5668-729D-475DC13A7DBC</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="017E6F1C-5574-E62E-7E9D-50106B7FC537"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="34F99883-4C01-C095-D166-BE6C3E7F81BE" name="Mobil_Warna_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>32736405-2D82-7F88-E5BF-B487393490BF</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8D378AE-E3C2-9236-1472-7828C1F5C81A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3E28F4EC-C9DC-4C11-16D7-AC0AB699190F" name="Mobil_Merk_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>2FADB3EE-8472-3406-2424-EDF096982C5A</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5020F647-4957-4B69-7201-22CC5DD6A0DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6C2B8FC0-5004-217A-6CEC-73AA7044D6ED" name="Mobil_Pelanggan_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>F66609DA-347C-A8CF-69D5-0B208E828868</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2BA7F1E0-38ED-FC89-9A7E-5C736E3DDDCF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

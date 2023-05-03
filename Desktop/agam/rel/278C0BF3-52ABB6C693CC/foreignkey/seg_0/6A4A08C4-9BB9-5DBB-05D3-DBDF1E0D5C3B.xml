@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6A4A08C4-9BB9-5DBB-05D3-DBDF1E0D5C3B" containerWithKeyObject="8B6570E4-2A36-2DD8-20DC-1AD6254A2EC7" localFKIndex="BF369C88-7413-DA99-2E5F-0FF73FC5E473" name="Mobil_Konidisi_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>B6803D20-2BFB-5668-729D-475DC13A7DBC</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<referredTableLongName>Konidisi</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DAD96723-5ADF-5EFD-FD71-5F550F137CD3</referredTableID>
+<keyObject>0B50316E-89A1-B95B-BC1D-C9529390D28F</keyObject>
+<referredKeyID>0B50316E-89A1-B95B-BC1D-C9529390D28F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Kondisi</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

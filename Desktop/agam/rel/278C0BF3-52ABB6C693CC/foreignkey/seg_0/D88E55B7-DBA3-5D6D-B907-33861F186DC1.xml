@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D88E55B7-DBA3-5D6D-B907-33861F186DC1" containerWithKeyObject="8B6570E4-2A36-2DD8-20DC-1AD6254A2EC7" localFKIndex="34F99883-4C01-C095-D166-BE6C3E7F81BE" name="Mobil_Warna_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>32736405-2D82-7F88-E5BF-B487393490BF</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<referredTableLongName>Warna</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8CCEDC2D-48C7-16D3-2A69-71675C2FC973</referredTableID>
+<keyObject>2922FFD0-5FEB-8F22-EDA3-1A86BDC8BD5B</keyObject>
+<referredKeyID>2922FFD0-5FEB-8F22-EDA3-1A86BDC8BD5B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Warna</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

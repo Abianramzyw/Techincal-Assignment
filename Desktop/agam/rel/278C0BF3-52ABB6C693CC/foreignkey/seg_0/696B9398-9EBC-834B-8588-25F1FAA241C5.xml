@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="696B9398-9EBC-834B-8588-25F1FAA241C5" containerWithKeyObject="8B6570E4-2A36-2DD8-20DC-1AD6254A2EC7" localFKIndex="3E28F4EC-C9DC-4C11-16D7-AC0AB699190F" name="Mobil_Merk_FK">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:06:47 UTC</createdTime>
+<generatorID>2FADB3EE-8472-3406-2424-EDF096982C5A</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<referredTableLongName>Merk</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2A05D526-6114-1978-7F16-7B0B70C4D5AC</referredTableID>
+<keyObject>7089D091-2BBE-2804-1954-016DD8110FDC</keyObject>
+<referredKeyID>7089D091-2BBE-2804-1954-016DD8110FDC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Merk</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

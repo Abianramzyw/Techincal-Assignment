@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="65E9D8FD-E3D6-9BED-9BCF-9A57F131D7C3" name="Pemesanan">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 15:24:15 UTC</createdTime>
+<ownerDesignName>agam</ownerDesignName>
+<engineerTo>
+<item key="278C0BF3-663D-F648-FB00-52ABB6C693CC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Nomor_Pemesanan" id="C4CFC5D9-CD4A-9BC5-98B9-1E790272CAAB">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 15:24:21 UTC</createdTime>
+<ownerDesignName>agam</ownerDesignName>
+<engineerTo>
+<item key="278C0BF3-663D-F648-FB00-52ABB6C693CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tanggal_Pemesanan" id="0BE02BBD-9E29-1ABF-C7F8-3E32EA24E32D">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 15:25:02 UTC</createdTime>
+<ownerDesignName>agam</ownerDesignName>
+<engineerTo>
+<item key="278C0BF3-663D-F648-FB00-52ABB6C693CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tanggal_Pengambilan" id="77EC766C-46D7-8B3A-8D67-398CE966CA4C">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 15:26:04 UTC</createdTime>
+<ownerDesignName>agam</ownerDesignName>
+<engineerTo>
+<item key="278C0BF3-663D-F648-FB00-52ABB6C693CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tanggal_Pengembalikan" id="A96EAF41-A20D-801A-A97F-5A3E189FDF56">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 15:26:12 UTC</createdTime>
+<ownerDesignName>agam</ownerDesignName>
+<engineerTo>
+<item key="278C0BF3-663D-F648-FB00-52ABB6C693CC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Mobil" id="91E7561D-3948-3F0D-C7A9-52355FF7B18F">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 15:58:24 UTC</createdTime>
+<generatorID>BB7D4370-729C-596C-014F-BDB261CADD38</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<engineerTo>
+<item key="278C0BF3-663D-F648-FB00-52ABB6C693CC" value="true"/>
+</engineerTo>
+<referedAttribute>22C2AA7B-1B54-2011-C1E7-F1D71871CC03</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Sopir" id="CACFD1DA-4BF5-8FEC-8A19-DB7202ADD799">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:00:02 UTC</createdTime>
+<generatorID>199E1039-BE7F-3A08-209B-26FBF85B420F</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<engineerTo>
+<item key="278C0BF3-663D-F648-FB00-52ABB6C693CC" value="true"/>
+</engineerTo>
+<referedAttribute>683A50FD-21A9-A7AF-1752-FB7B1EE3DAE8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Jenis_layanan" id="143F7A6D-6D68-DF7E-1A67-5C810F9A156A">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 16:38:24 UTC</createdTime>
+<generatorID>52C5608C-68E0-50DC-1FC4-BCF84DACABB3</generatorID>
+<ownerDesignName>agam</ownerDesignName>
+<engineerTo>
+<item key="278C0BF3-663D-F648-FB00-52ABB6C693CC" value="true"/>
+</engineerTo>
+<referedAttribute>F7157835-E4D6-8623-27C0-559EFD6E8F2A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CDA7977E-C63A-9E4C-41AC-77AFFE58E775" name="Pemesanan PK">
+<createdBy>ASUS</createdBy>
+<createdTime>2023-05-03 15:24:47 UTC</createdTime>
+<ownerDesignName>agam</ownerDesignName>
+<engineerTo>
+<item key="278C0BF3-663D-F648-FB00-52ABB6C693CC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C4CFC5D9-CD4A-9BC5-98B9-1E790272CAAB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
