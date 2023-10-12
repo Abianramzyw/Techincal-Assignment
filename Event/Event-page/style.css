@@ -1,0 +1,193 @@
+:root {
+    --primary: #1b262c;
+    --secondary: #0f4c75;
+    --info: #3282b8;
+    --other: #bbe1fa;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Lato", sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    /* min-height: 2000px; */
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 2px solid var(--other);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+  
+  .navbar .navbar-logo {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+  }
+  
+  .navbar .navbar-nav a {
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-size: 0.8rem;
+    margin: 0 1rem;
+  }
+  
+  .navbar .navbar-nav a:hover {
+    color: var(--info);
+  }
+  
+  .navbar .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.1rem;
+    border-bottom: 0.1rem solid var(--info);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+  }
+  
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+  }
+  
+  .navbar .navbar-extra a {
+    color: rgb(0, 0, 0);
+    margin: 0 0.5rem;
+  }
+  
+  .navbar .navbar-extra a:hover {
+    color: var(--info);
+  }
+  
+  .search {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .cart {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .profile {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .menu {
+    width: 20px;
+    height: 20px;
+  }
+  
+  #menu {
+    display: none;
+  }
+  
+  
+  /* ------------------------------------------------------------------------------------------- */
+
+  .event{
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+  .event h2{
+    font-size: 1.3rem;
+    font-family: "Lato", sans-serif;
+    margin-top: 5%;
+    margin-left: 3%;
+  }
+  
+  #iklan{
+    width: 1090px;
+    height: 289px;
+    margin-top: 8%;
+  }
+
+  .sertifikasi{
+    display: flex;
+    gap: 1.5%;
+    margin-top: 1%;
+
+  }
+
+  .sertifikasi img{
+    width: 328px;
+    height: 155;
+  }
+
+  .webinar{
+    display: flex;
+    gap: 1.5%;
+    margin-top: 1%;
+
+  }
+
+  .webinar img{
+    width: 328px;
+    height: 155;
+  }
+
+
+  .seminar{
+    display: flex;
+    gap: 1.5%;
+    margin-top: 1%;
+
+  }
+
+  .seminar img{
+    width: 328px;
+    height: 155;
+  }
+
+
+  /* ------------------------------------------------------------------------------------------- */
+
+footer {
+    background-color: var(--primary);
+    text-align: center;
+    padding: 1rem 0 3rem;
+    margin-top: 3rem;
+  }
+  
+  footer .socials {
+    padding: 1rem 0;
+  }
+  
+  footer .socials a {
+    color: #fff;
+    margin: 1rem;
+  }
+  
+  footer .socials a:hover {
+    color: var(--other);
+  }
+  
+  footer .copyright {
+    font-size: 0.8rem;
+  }
+  
+  footer .copyright p {
+    color: var(--other);
+    font-weight: 700;
+  }
