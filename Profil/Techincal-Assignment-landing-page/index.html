@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>OWLEARN</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#home" class="navbar-logo">OWLEARN</a>
+      <div class="navbar-nav">
+        <a href="#home">HOME</a>
+        <a href="#learning">LEARNING</a>
+        <a href="#event">EVENT</a>
+        <a href="#about">ABOUT US</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="search"><i class="search" data-feather="search"></i></a>
+        <a href="#" id="cart"
+          ><i class="cart" data-feather="shopping-cart"></i
+        ></a>
+        <a href="#" id="profile"><i class="profile" data-feather="user"></i></a>
+        <a href="#" id="menu"><i class="menu" data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Benefit <span>Big-Time</span></h1>
+        <p id="description">
+          Owlearn adalah sebuah platform pembelajaran dan pengajaran online yang
+          menyediakan video kursus dan informasi tentang kegiatan yang akan
+          berlangsung seperti webinar dan sertifikasi. Platform ini menawarkan
+          berbagai kursus online di berbagai jenjang pendidikan, seperti SD,
+          SMP, SMA, bahkan Universitas.
+        </p>
+        <a href="#" class="cta">Start Learning</a>
+      </main>
+      <img
+        class="hero-logo"
+        src="https://i.postimg.cc/3xjYnm20/Owl-1.png"
+        alt="Owlearn"
+      />
+    </section>
+
+    <section id="bot" class="bot">
+      <img
+        class="bot-image"
+        src="https://i.postimg.cc/Jhpj9yjP/Owl-2.png"
+        alt="Bot"
+      />
+      <main class="content">
+        <h4>Masih Punya Pertanyaan?</h4>
+        <h1>Tanyakan via chat ke Chatbot kami</h1>
+      </main>
+      <a href="#" class="cta">Chatbot AI</a>
+    </section>
+
+    <section id="partner" class="partner">
+      <main class="content">
+        <h1>Our <span>Partnerships & Integrations</span></h1>
+        <img
+          src="https://i.postimg.cc/PxJ64rPW/skilvul.png"
+          alt="Skilvul-logo"
+        />
+        <a id="link" href="https://skilvul.com">Skilvul</a>
+      </main>
+    </section>
+
+    <section id="form" class="form">
+      <div class="container">
+        <div class="title">Sign Up and Start Learning</div>
+        <form onsubmit="return submit()">
+          <span class="details">Name :</span>
+          <input
+            id="name"
+            class="name"
+            type="text"
+            placeholder="Name"
+            required
+          />
+          <span class="details">City :</span>
+          <input
+            id="city"
+            class="city"
+            type="text"
+            placeholder="City"
+            required
+          />
+          <span class="details">Email :</span>
+          <input
+            id="email"
+            class="email"
+            type="email"
+            placeholder="Email"
+            required
+          />
+          <span class="details">Zip Code :</span>
+          <input
+            id="zip-code"
+            class="zip-code"
+            type="number"
+            placeholder="Zip Code"
+            required
+          />
+          <input class="status" id="status" type="checkbox" />
+          <label id="check" for=""
+            >Dengan ini saya menyatakan data yang diisi pada form ini adalah
+            benar dan telah sesuai</label
+          >
+          <button
+            onclick="handleGetFormData()"
+            id="submit-form"
+            type="submit"
+            class="btn"
+            value="register"
+          >
+            Submit
+          </button>
+          <div id="warning"></div>
+        </form>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Us</h2>
+      <div class="row">
+        <div class="about-img">
+          <div class="content">
+            <h3><span>Tomorrow’s</span> skills — today</h3>
+            <p>
+              Owlears's mission is to provide flexible, effective skill
+              development to empower organizations and individuals.
+            </p>
+            <p>
+              Owlearn Business helps companies achieve critical business
+              outcomes and stay competitive by offering engaging on-demand,
+              immersive, and cohort-based learning.
+            </p>
+            <p>
+              With our integrated learning solutions and strategic partnership,
+              we equip companies with the tools to build a future-ready
+              workforce, increase employee engagement, and achieve business
+              outcomes.
+            </p>
+            <p>
+              And we tailor learning to our customers’ needs, so they can
+              deliver the right learning experience to the right people in the
+              right format.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <footer>
+        <div class="socials">
+          <a href="https://www.instagram.com/abianramzy/"
+            ><i data-feather="instagram"></i
+          ></a>
+          <a href="https://twitter.com/VVijaya_"
+            ><i data-feather="twitter"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/abian-ramzy-wijaya-b04a93181/"
+            ><i data-feather="linkedin"></i
+          ></a>
+          <a href="https://www.youtube.com/@abianramzyYT"
+            ><i data-feather="youtube"></i
+          ></a>
+        </div>
+
+        <div class="copyright">
+          <p>Copyright @ 2023 All rights reserved</p>
+        </div>
+      </footer>
+    </footer>
+
+    <script>
+      feather.replace();
+    </script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
