@@ -104,16 +104,56 @@
   
   
   /* ------------------------------------------------------------------------------------------- */
-
+ 
   .informasi-event{
     background-color: #ABBED1;
-    margin-top: 8%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-top: 6%;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 25px;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2%;
   }
 
- 
+  .informasi-event img{
+    width: 100%;
+    height: 80%;
+    margin-right: 0px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+  }
 
+  .informasi-event p{
+    font-size: 1.1rem;
+    font-family: "Lato", sans-serif;
+    margin-top: 2em;
+    text-align: justify;
+    line-height: 1.8em;
+  }
+
+
+  #informasi-event-button{
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 0.8%;
+    padding-bottom: 0.8%;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    font-family: "Lato", sans-serif;
+    background-color: #07689F;
+    color: white;
+    margin-left: 82%;
+    margin-bottom: -20%;
+  }
+
+  
+  #icon-back{
+    position: fixed;
+    width: 4.5%;
+    height: 9%;
+    margin-left: 5%;
+  }
 
   /* ------------------------------------------------------------------------------------------- */
 
