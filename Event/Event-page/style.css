@@ -106,23 +106,37 @@
   /* ------------------------------------------------------------------------------------------- */
 
   .event{
-    padding-right: 2%;
-    padding-left: 2%;
+    padding-right: 3%;
+    padding-left: 3%;
+  }
+
+  .event img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
   }
 
   .event h2{
     font-size: 1.3rem;
     font-family: "Lato", sans-serif;
-    margin-top: 5%;
-    margin-left: 3%;
+    margin-top: 3%;
+    padding-left: 2%;
+    border-bottom: 2px solid #ecf8fc;
+    padding-bottom: 4px;
   }
   
   #iklan{
-    max-width: 100%; 
-    max-height: 80%;
-    margin-top: 8%;
-    margin-left: 2%;
-    margin-right: 2%;
+    width: 80%; 
+    height: 80%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+  }
+
+  .posisi-iklan{
+    margin-top: 5em;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 6em;
   }
 
   .event ::-webkit-scrollbar{
@@ -133,25 +147,24 @@
     display: flex;
     overflow-x: scroll;
     gap: 1.5%;
-    margin-top: 1%;
+    margin-top: 0.8%;
   }
 
   .sertifikasi img{
-    width: 328px;
-    height: 155;
+    width: 26%;
+    height: 19%;
   }
 
   .webinar{
     display: flex;
     overflow-x: scroll;
     gap: 1.5%;
-    margin-top: 0.5%;
-
+    padding-top: 0.8%;
   }
 
   .webinar img{
-    width: 328px;
-    height: 155;
+    width: 26%;
+    height: 19%;
   }
 
 
@@ -159,13 +172,13 @@
     display: flex;
     overflow-x: scroll;
     gap: 1.5%;
-    margin-top: 0.5%;
+    padding-top: 0.8%;
 
   }
 
   .seminar img{
-    width: 328px;
-    height: 155;
+    width: 26%;
+    height: 19%;
   }
 
 
@@ -198,4 +211,135 @@ footer {
   footer .copyright p {
     color: var(--other);
     font-weight: 700;
+  }
+
+
+
+
+
+
+  @media screen and (max-width: 1025px){
+    #iklan{
+      width: 88%; 
+      height: 90%;
+    }
+    .event img{
+      width: 29%;
+      height: 22%;
+    }
+    .event h2{
+      font-size: 1.2rem;
+    }
+  }
+
+  @media screen and (max-width: 850px){
+    .event h2{
+      font-size: 1.05rem;
+    }
+    .posisi-iklan{
+      margin-bottom: 5%;
+    }
+    .event img{
+      width: 34%;
+      height: 27%;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    .event img{
+      width: 37%;
+      height: 30%;
+    }
+  }
+
+  @media screen and (max-width: 675px){
+    .event img{
+      width: 39%;
+      height: 32%;
+    }
+  }
+
+  @media screen and (max-width: 625px){
+    .event h2{
+      font-size: 1rem;
+    }
+    .posisi-iklan{
+      margin-top: 6em;
+    }
+    #iklan{
+      width: 90%; 
+      height: 92%;
+    }
+    .event img{
+      width: 41%;
+      height: 34%;
+    }
+  }
+
+  @media screen and (max-width: 530px){
+    .posisi-iklan{
+      margin-top: 6.5em;
+    }
+    #iklan{
+      width: 94%; 
+      height: 9em;
+    }
+    .event img{
+      width: 49%;
+      height: 42%;
+    }
+  }
+
+  @media screen and (width: 445px){
+    #iklan{
+      width: 94%; 
+      height: 8.5em;
+    }
+    .event img{
+      width: 57%;
+      height: 50%;
+    }
+  }
+
+  @media screen and (max-width: 444px){
+    .posisi-iklan{
+      margin-top: 7.5em;
+    }
+    #iklan{
+      width: 95%; 
+      height: 8.6em;
+    }
+    .event img{
+      width: 63%;
+      height: 56%;
+    }
+  }
+
+  @media screen and (max-width: 360px){
+    #iklan{
+      width: 95%; 
+      height: 8.2em;
+    }
+    .event img{
+      width: 69%;
+      height: 62%;
+    }
+  }
+
+  @media screen and (max-width: 350px){
+    .event h2{
+      font-size: 0.9rem;
+    }
+    .posisi-iklan{
+      margin-top: 8.5em;
+      margin-bottom: 8%;
+    }
+    #iklan{
+      width: 96%; 
+      height: 8.1em;
+    }
+    .event img{
+      width: 74%;
+      height: 67%;
+    }
   }

@@ -143,16 +143,21 @@
     font-family: "Lato", sans-serif;
     background-color: #07689F;
     color: white;
-    margin-left: 82%;
+    margin-left: 40em;
     margin-bottom: -20%;
+    box-shadow: 0 5px 15px #5e6163; 
+    cursor: pointer;
   }
 
   
   #icon-back{
     position: fixed;
-    width: 4.5%;
-    height: 9%;
+    width: 3.8em;
+    height: 3.5em;
     margin-left: 5%;
+    box-shadow: 0 5px 15px #d0d9e0; 
+    border-radius: 100px;
+    cursor: pointer;
   }
 
   /* ------------------------------------------------------------------------------------------- */
@@ -185,3 +190,176 @@ footer {
     color: var(--other);
     font-weight: 700;
   }
+
+
+
+  /* ------------------------------------------------------------------------------------------------- */
+
+  @media screen and (max-width: 1075px){
+    #informasi-event-button{
+      margin-left: 78%;
+    }
+  }
+  
+  
+  @media screen and (max-width: 1025px){
+    .informasi-event{
+      margin-top: 4.5em;
+    }
+
+    #informasi-event-button{
+      margin-top: 1em;
+      margin-left: 76%;
+    }
+  }
+
+
+  @media screen and (max-width: 850px){
+
+    #informasi-event-button{
+      margin-top: 1em;
+      margin-left: 74%;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+
+    #informasi-event-button{
+      margin-top: 1em;
+      margin-left: 73%;
+    }
+
+    .informasi-event{
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  }
+
+  @media screen and (max-width: 675px){
+
+    #informasi-event-button{
+      margin-top: 1em;
+      margin-left: 72%;
+    }
+
+  }
+
+  @media screen and (max-width: 625px){
+
+    #informasi-event-button{
+      margin-top: 1em;
+      margin-left: 70%;
+    }
+
+    .informasi-event{
+      margin-top: 6em;
+    }
+
+  }
+
+  @media screen and (max-width: 530px){
+
+    #informasi-event-button{
+      margin-top: 1em;
+      margin-left: 64%;
+    }
+
+  }
+
+  @media screen and (width: 445px){
+    #informasi-event-button{
+      margin-left: 58%;
+    }
+
+    #icon-back{
+      width: 3.5em;
+      height: 3.2em;
+    }
+
+    .informasi-event p{
+      font-size: 1rem;
+      margin-top: 1em;
+    }
+
+  }
+
+  @media screen and (max-width: 444px){
+
+    #informasi-event-button{
+      margin-left: 58%;
+      font-size: 1rem;
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-top: 1.2%;
+      padding-bottom: 1.2%;
+    }
+
+    .informasi-event{
+      margin-top: 9em;
+      margin-left: 8%;
+      margin-right: 8%;
+      padding: 0px;
+    }
+
+    #icon-back{
+      margin-left: 4%;
+      margin-top: -7%;
+      width: 3em;
+      height: 2.6em;
+    }
+
+    .informasi-event p{
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-bottom: 2px;
+    }
+   
+  }
+
+  @media screen and (max-width: 360px){
+    #icon-back{
+      width: 2.7em;
+      height: 2.4em;
+      margin-top: -8%;
+    }
+    
+    .informasi-event{
+      margin-top: 9em;
+      margin-left: 4%;
+      margin-right: 4%;
+    }
+
+    .informasi-event p{
+      font-size: 0.95rem;
+      margin-top: 1em;
+    }
+
+    #informasi-event-button{
+      margin-left: 56%;
+      font-size: 0.95rem;
+    }
+   
+  }
+
+  @media screen and (max-width: 350px){
+    #icon-back{
+      margin-top: -12%;
+    }
+    .informasi-event{
+      margin-top: 10em;
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+    #informasi-event-button{
+      margin-left: 50%;
+    }
+    
+    .informasi-event img{
+      height: 100%;
+    }
+  }
+
+
+
+
+
