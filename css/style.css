@@ -88,6 +88,71 @@ body {
   height: 20px;
 }
 
+.cart-box {
+  border: solid 1px black;
+  padding: 10px 20px;
+  position: absolute;
+  min-width: 500px;
+  margin-left: -20rem;
+}
+
+.cart-box h2 {
+  font-size: x-large;
+  padding: 15px 10px;
+}
+
+.cart-box .cart-wrapper {
+  overflow-y: auto;
+  max-height: 350px;
+}
+
+.cart-box .cart-item {
+  display: grid;
+  grid-template-columns: 3fr 6fr 1fr;
+  padding: 5% 2%;
+  border-bottom: solid 1px black;
+}
+
+.cart-box .cart-item img {
+  width: 100%;
+}
+
+.cart-box .cart-item h3 {
+  text-align: left;
+}
+
+.cart-box .cart-item .details {
+  padding-left: 10%;
+}
+
+.cart-box .subtotal {
+  text-align: right;
+  padding: 5%;
+}
+
+.cart-box .checkout {
+  width: 95%;
+  text-align: center;
+  cursor: pointer;
+  background-color: black;
+  font-size: large;
+  color: white;
+  margin: 10px auto;
+  padding: 10px 15px;
+}
+
+.cart-box .view-cart {
+  width: 95%;
+  text-align: center;
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid blue;
+  font-size: large;
+  color: black;
+  margin: 10px auto;
+  padding: 10px 15px;
+}
+
 .profile {
   width: 20px;
   height: 20px;
