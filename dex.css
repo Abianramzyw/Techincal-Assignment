@@ -1,0 +1,67 @@
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  .box {
+    background-color: #88cadb;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 600px) {
+    .box {
+      padding: 10px;
+    }
+  }
+  
+  .body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-image: url(chair-beside-book-shelves-2041540-9877dcc33f6651defa63f4389ec54852_600x400.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+h1 {
+	margin-top: 0;
+	color: black;
+}
+
+p {
+	margin-bottom: 50px;
+	color: #ca2222;
+	font-size: 20px;
+	text-align: center;
+}
+
+a {
+	display: block;
+	margin: 0 auto;
+	padding: 10px 20px;
+	background-color: #333;
+	color: black;
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	width: 100px;
+	cursor: pointer;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: #555;
+}
