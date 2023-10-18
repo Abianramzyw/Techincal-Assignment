@@ -106,60 +106,83 @@ body {
 /* ------------------------------------------------------------------------------------------- */
 
 #icon-back{
-  margin-top: 0;
+  margin-top: 5em;
   position: fixed;
   width: 4.5%;
   height: 9%;
   margin-left: 5%;
+  box-shadow: 0 5px 15px #d0d9e0; 
+  border-radius: 100px;
+  cursor: pointer;
 }
 
-.room-chatbot{
-    margin-top: 5em;
-    margin-bottom: 7em;
-    margin-left: 10em;
-    margin-right: 10em;
-    border: 2px solid whitesmoke;
-    border-radius: 8px;
-    background-color: #F4F4F4;
-    height: 33em;
+.posisi-tengah {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.nama-room{
-    text-align: center;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    background-color: #07689F;
-    border-radius: 8px;
+.room-chatbot {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  justify-content: flex-start; 
+  border: 2px solid whitesmoke;
+  border-radius: 8px;
+  background-color: whitesmoke;
+  height: 33em;
+  width: 70%;
 }
 
-.nama-room h3{
-   color: white;
-   font-size: 1.2rem;
-   font-family: "Lato", sans-serif;
+.nama-room {
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background-color: #07689F;
+  border-radius: 8px;
+  width: 100%;
 }
 
-.chatting{
-    padding: 4em;
+.nama-room h3 {
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Lato", sans-serif;
 }
 
-.chatting #pesan-chatbot{
-    padding: 1.5em;
-    margin-right: 35.4em;
-    margin-bottom: 2em;
+
+.chatting {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box-chat{
+  margin-top: 5%; 
+}
+
+.box-chat #pesan-chatbot{
+    padding: 1.3em;
+    width: 30%;
+    margin-bottom: 3%;
+    margin-left: 5%;
     background-color: white;
     border-radius: 12px;
     font-size: 1rem;
     font-family: "Lato", sans-serif;
 }
 
-.chatting #pesan-user{
-    padding: 1.5em;
-    margin-left: 35.4em;
-    margin-bottom: 2em;
+.box-chat #pesan-user{
+    padding: 1.3em;
+    width: 30%;
+    margin-bottom: 3%;
+    margin-right: 5%;
     background-color: white;
     border-radius: 12px;
     font-size: 1rem;
     font-family: "Lato", sans-serif;
+    margin-left: auto;
 }
 
 .tempat-ketik{
@@ -167,13 +190,14 @@ body {
     background-color: #07689F;
     gap: 16px;
     border-radius: 8px;
-    margin-top: 6em;
-    height: 10%;
+    margin-top: 13em;
+    height: 11.5%;
+    width: 100%;
 }
 
 .tempat-ketik input{
-    margin: 6px;
-    margin-left: 8em;
+    margin: 8px;
+    margin-left: 7em;
     padding-left: 2%;
     width: 70%;
     border-radius: 8px;
@@ -186,6 +210,8 @@ body {
     height: 2.4rem;
     padding: 0px;
     margin-top: 0.5%;
+    border-radius: 100px;
+    cursor: pointer;
 }
 
  /* ------------------------------------------------------------------------------------------- */
@@ -218,3 +244,45 @@ footer .copyright p {
   color: var(--other);
   font-weight: 700;
 }
+
+
+
+/* @media screen and (max-width: 1075px){
+  .chatting #pesan-chatbot{
+    width: 36%;
+  }
+
+  .chatting #pesan-user{
+    width: 36%;
+  }
+  .chatting{
+    padding: 3.5em;
+  }
+  .room-chatbot{
+    height: 30em;
+    margin-top: 4em;
+  }
+  #icon-back{
+    width: 5%;
+    height: 9.5%;
+  }
+  .tempat-ketik input{
+    margin-left: 5em;
+  }
+}
+
+@media screen and (max-width: 1025px){
+  .chatting{
+    padding: 3.4em;
+  }
+  #icon-back{
+    width: 5.2%;
+  }
+}
+
+
+@media screen and (max-width: 880px){
+  .room-chatbot{
+    width: 75%;
+  }
+} */
