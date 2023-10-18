@@ -151,11 +151,11 @@
   }
 
   .sertifikasi img{
-    width: 26%;
-    height: 19%;
+    width: 20em;
+    height: 12em;
   }
 
-  .webinar{
+  /* .webinar{
     display: flex;
     overflow-x: scroll;
     gap: 1.5%;
@@ -163,8 +163,8 @@
   }
 
   .webinar img{
-    width: 26%;
-    height: 19%;
+    width: 20em;
+    height: 12em;
   }
 
 
@@ -177,9 +177,9 @@
   }
 
   .seminar img{
-    width: 26%;
-    height: 19%;
-  }
+    width: 20em;
+    height: 12em;
+  } */
 
 
   /* ------------------------------------------------------------------------------------------- */
@@ -224,8 +224,8 @@ footer {
       height: 90%;
     }
     .event img{
-      width: 29%;
-      height: 22%;
+      width: 18em;
+      height: 10em;
     }
     .event h2{
       font-size: 1.2rem;
@@ -240,22 +240,22 @@ footer {
       margin-bottom: 5%;
     }
     .event img{
-      width: 34%;
-      height: 27%;
+      width: 17em;
+      height: 9em;
     }
   }
 
   @media screen and (max-width: 768px){
     .event img{
-      width: 37%;
-      height: 30%;
+      width: 16.5em;
+      height: 8.5em;
     }
   }
 
   @media screen and (max-width: 675px){
     .event img{
-      width: 39%;
-      height: 32%;
+      width: 16em;
+      height: 8em;
     }
   }
 
@@ -271,8 +271,8 @@ footer {
       height: 92%;
     }
     .event img{
-      width: 41%;
-      height: 34%;
+      width: 14.5em;
+      height: 7.5em;
     }
   }
 
@@ -285,8 +285,8 @@ footer {
       height: 9em;
     }
     .event img{
-      width: 49%;
-      height: 42%;
+      width: 12em;
+      height: 7em;
     }
   }
 
@@ -296,8 +296,8 @@ footer {
       height: 8.5em;
     }
     .event img{
-      width: 57%;
-      height: 50%;
+      width: 11.5em;
+      height: 6.5em;
     }
   }
 
@@ -310,8 +310,8 @@ footer {
       height: 8.6em;
     }
     .event img{
-      width: 63%;
-      height: 56%;
+      width: 11.2em;
+      height: 6.2em;
     }
   }
 
@@ -321,8 +321,8 @@ footer {
       height: 8.2em;
     }
     .event img{
-      width: 69%;
-      height: 62%;
+      width: 11em;
+      height: 6.1em;
     }
   }
 
@@ -339,7 +339,7 @@ footer {
       height: 8.1em;
     }
     .event img{
-      width: 74%;
-      height: 67%;
+      width: 10em;
+      height: 5.6em;
     }
   }
