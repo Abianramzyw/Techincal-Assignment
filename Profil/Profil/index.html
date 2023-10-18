@@ -40,23 +40,29 @@
 
     <img src="foto/back.png" alt="icon-send" id="icon-back"/>
 
-    <div class="container">
+    <div class="tengah">
         <div class="room-profil">
           <div class="data">
             <label>Nama Lengkap</label> <br>
-              <input type="text" id="nama-lengkap"> <br>
+              <input type="text" id="nama-lengkap" disabled> <br>
+
             <label id="pekerjaan-label">Pekerjaan</label> <br>
-              <input type="text" id="pekerjaan"> <br>
+              <input type="text" id="pekerjaan" disabled> <br>
+
             <label>Asal Sekolah</label> <br>
-              <input type="text" id="asal-sekolah"> <br>
+              <input type="text" id="asal-sekolah" disabled> <br>
+
             <label>Gmail</label> <br>
-              <input type="text" id="gmail"> <br>
+              <input type="text" id="gmail" disabled> <br>
+
             <label>No Hp</label> <br>
-              <input type="text" id="no-hp"> <br>
+              <input type="text" id="no-hp" disabled> <br>
+
             <label>Password</label> <br>
-              <input type="text" id="pass"> <br>
+              <input type="text" id="pass" disabled> <br>
           </div>
-          <button type="button" id="button-edit">Edit</button>
+              <button type="button" id="button-edit" onclick="editProfile()">Edit</button>
+              <button type="button" id="button-submit" style="display: none;" onclick="submitProfile()">Submit</button>
         </div>
       </div>
         
@@ -94,8 +100,7 @@
         feather.replace();
       </script>
   
+  
       <script src="script.js"></script>
-
-
   </body>
 </html>
