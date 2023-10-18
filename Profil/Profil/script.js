@@ -22,7 +22,7 @@ feather.replace();
   const editButton = document.getElementById("button-edit");
   const submitButton = document.getElementById("button-submit");
   const notifikasi = document.getElementById("notifikasi");
-  const formElements = {
+  const dataUser = {
     namaLengkap: document.getElementById("nama-lengkap"),
     pekerjaan: document.getElementById("pekerjaan"),
     asalSekolah: document.getElementById("asal-sekolah"),
@@ -31,20 +31,20 @@ feather.replace();
     pass: document.getElementById("pass"),
   };
 
-  const apiBaseUrl = "https://652d0acbf9afa8ef4b26af21.mockapi.io/dataprofil";
-  const dataId = 1;
-  const apiEndpoint = `${apiBaseUrl}/${dataId}`;
+  const linkMockApi = "https://652d0acbf9afa8ef4b26af21.mockapi.io/dataprofil";
+  const idUser = 1;
+  const apiEndpoint = `${linkMockApi}/${idUser}`;
 
-  editButton.addEventListener("click", editProfile);
-  submitButton.addEventListener("click", submitProfile);
+  editButton.addEventListener("click", editProfil);
+  submitButton.addEventListener("click", submitProfil);
 
-  function fetchDataAndPopulateForm() {
+  function ambilData() {
     fetch(apiEndpoint)
       .then((response) => {
         if (response.ok) {
           return response.json();
         } else {
-          notifikasi.textContent = "Gagal mengambil data.";
+          notifikasi.textContent = "Gagal";
           setTimeout(() => {
             notifikasi.style.display = "none";
           }, 1000);
@@ -53,38 +53,38 @@ feather.replace();
         })
       .then((data) => {
         if (data) {
-          formElements.namaLengkap.value = data.namaLengkap;
-          formElements.pekerjaan.value = data.pekerjaan;
-          formElements.asalSekolah.value = data.asalSekolah;
-          formElements.gmail.value = data.gmail;
-          formElements.noHp.value = data.noHp;
-          formElements.pass.value = data.pass;
+          dataUser.namaLengkap.value = data.namaLengkap;
+          dataUser.pekerjaan.value = data.pekerjaan;
+          dataUser.asalSekolah.value = data.asalSekolah;
+          dataUser.gmail.value = data.gmail;
+          dataUser.noHp.value = data.noHp;
+          dataUser.pass.value = data.pass;
         }
       });
   }
 
-  function editProfile() {
-    fetchDataAndPopulateForm();
+  function editProfil() {
+    ambilData();
 
-    for (const field in formElements) {
-      formElements[field].removeAttribute("disabled");
+    for (const field in dataUser) {
+      dataUser[field].removeAttribute("disabled");
     }
 
     editButton.style.display = "none";
     submitButton.style.display = "block";
   }
 
-  function submitProfile() {
+  function submitProfil() {
     const profilData = {
-      namaLengkap: formElements.namaLengkap.value,
-      pekerjaan: formElements.pekerjaan.value,
-      asalSekolah: formElements.asalSekolah.value,
-      gmail: formElements.gmail.value,
-      noHp: formElements.noHp.value,
-      pass: formElements.pass.value,
+      namaLengkap: dataUser.namaLengkap.value,
+      pekerjaan: dataUser.pekerjaan.value,
+      asalSekolah: dataUser.asalSekolah.value,
+      gmail: dataUser.gmail.value,
+      noHp: dataUser.noHp.value,
+      pass: dataUser.pass.value,
     };
 
-    const requestOptions = {
+    const ubahData = {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -93,14 +93,14 @@ feather.replace();
     };
 
     notifikasi.style.display = "block";
-    notifikasi.textContent = "Sedang mengirim data...";
+    notifikasi.textContent = "Sedang diproses..";
 
-    fetch(apiEndpoint, requestOptions)
+    fetch(apiEndpoint, ubahData)
       .then((response) => {
         if (response.ok) {
           return response.json();
         } else {
-          notifikasi.textContent = "Gagal mengirim data.";
+          notifikasi.textContent = "Gagal.";
           setTimeout(() => {
             notifikasi.style.display = "none";
           }, 1000);
@@ -115,8 +115,8 @@ feather.replace();
           }, 1000);
           console.log("Berhasil:", data);
 
-          for (const field in formElements) {
-            formElements[field].setAttribute("disabled", "disabled");
+          for (const field in dataUser) {
+            dataUser[field].setAttribute("disabled", "disabled");
           }
 
           submitButton.style.display = "none";
@@ -124,5 +124,5 @@ feather.replace();
         }
       });
   }
-    fetchDataAndPopulateForm();
+    ambilData();
 
