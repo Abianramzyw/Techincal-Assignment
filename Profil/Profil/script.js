@@ -17,78 +17,112 @@ logout.addEventListener("click", function () {
 
 });
 
-function editProfile() {
-  document.getElementById("nama-lengkap").removeAttribute("disabled");
-  document.getElementById("pekerjaan").removeAttribute("disabled");
-  document.getElementById("asal-sekolah").removeAttribute("disabled");
-  document.getElementById("gmail").removeAttribute("disabled");
-  document.getElementById("no-hp").removeAttribute("disabled");
-  document.getElementById("pass").removeAttribute("disabled");
 
-  document.getElementById("button-edit").style.display = "none";
-  document.getElementById("button-submit").style.display = "block";
-}
-
-function submitProfile() {
-  const id = 1; 
-  const namaLengkap = document.getElementById("nama-lengkap").value;
-  const pekerjaan = document.getElementById("pekerjaan").value;
-  const asalSekolah = document.getElementById("asal-sekolah").value;
-  const gmail = document.getElementById("gmail").value;
-  const noHp = document.getElementById("no-hp").value;
-  const pass = document.getElementById("pass").value;
-
-  const profilData = {
-    namaLengkap,
-    pekerjaan,
-    asalSekolah,
-    gmail,
-    noHp,
-    pass,
+feather.replace();
+  const editButton = document.getElementById("button-edit");
+  const submitButton = document.getElementById("button-submit");
+  const notifikasi = document.getElementById("notifikasi");
+  const formElements = {
+    namaLengkap: document.getElementById("nama-lengkap"),
+    pekerjaan: document.getElementById("pekerjaan"),
+    asalSekolah: document.getElementById("asal-sekolah"),
+    gmail: document.getElementById("gmail"),
+    noHp: document.getElementById("no-hp"),
+    pass: document.getElementById("pass"),
   };
 
-  const apiEndpoint = "https://652d0acbf9afa8ef4b26af21.mockapi.io/dataprofil";
-  const requestOptions = {
-    method: "PUT",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(profilData),
-  };
+  const apiBaseUrl = "https://652d0acbf9afa8ef4b26af21.mockapi.io/dataprofil";
+  const dataId = 1;
+  const apiEndpoint = `${apiBaseUrl}/${dataId}`;
 
-  document.getElementById("notifikasi").style.display = "block";
-  document.getElementById("notifikasi").textContent = "Sedang mengirim data...";
+  editButton.addEventListener("click", editProfile);
+  submitButton.addEventListener("click", submitProfile);
 
-  fetch(apiEndpoint, requestOptions)
-    .then((response) => {
-      if (response.ok) {
-        return response.json();
-      } else {
-        document.getElementById("notifikasi").textContent = "Gagal mengirim data.";
-        setTimeout(function () {
-          document.getElementById("notifikasi").style.display = "none";
-        }, 1000);
-        console.error("Gagal:", response);
-      }
+  function fetchDataAndPopulateForm() {
+    fetch(apiEndpoint)
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          notifikasi.textContent = "Gagal mengambil data.";
+          setTimeout(() => {
+            notifikasi.style.display = "none";
+          }, 1000);
+            console.error("Gagal:", response);
+          }
+        })
+      .then((data) => {
+        if (data) {
+          formElements.namaLengkap.value = data.namaLengkap;
+          formElements.pekerjaan.value = data.pekerjaan;
+          formElements.asalSekolah.value = data.asalSekolah;
+          formElements.gmail.value = data.gmail;
+          formElements.noHp.value = data.noHp;
+          formElements.pass.value = data.pass;
+        }
+      });
+  }
+
+  function editProfile() {
+    fetchDataAndPopulateForm();
+
+    for (const field in formElements) {
+      formElements[field].removeAttribute("disabled");
+    }
+
+    editButton.style.display = "none";
+    submitButton.style.display = "block";
+  }
+
+  function submitProfile() {
+    const profilData = {
+      namaLengkap: formElements.namaLengkap.value,
+      pekerjaan: formElements.pekerjaan.value,
+      asalSekolah: formElements.asalSekolah.value,
+      gmail: formElements.gmail.value,
+      noHp: formElements.noHp.value,
+      pass: formElements.pass.value,
+    };
+
+    const requestOptions = {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(profilData),
+    };
+
+    notifikasi.style.display = "block";
+    notifikasi.textContent = "Sedang mengirim data...";
+
+    fetch(apiEndpoint, requestOptions)
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          notifikasi.textContent = "Gagal mengirim data.";
+          setTimeout(() => {
+            notifikasi.style.display = "none";
+          }, 1000);
+            console.error("Gagal:", response);
+        }
     })
-    .then((data) => {
-      if (data) {
-        document.getElementById("notifikasi").textContent = "Data berhasil diubah.";
-        setTimeout(function () {
-          document.getElementById("notifikasi").style.display = "none";
-        }, 1000);
-        console.log("Berhasil:", data);
+      .then((data) => {
+        if (data) {
+          notifikasi.textContent = "Data berhasil diubah.";
+          setTimeout(() => {
+            notifikasi.style.display = "none";
+          }, 1000);
+          console.log("Berhasil:", data);
 
-        document.getElementById("nama-lengkap").setAttribute("disabled", "disabled");
-        document.getElementById("pekerjaan").setAttribute("disabled", "disabled");
-        document.getElementById("asal-sekolah").setAttribute("disabled", "disabled");
-        document.getElementById("gmail").setAttribute("disabled", "disabled");
-        document.getElementById("no-hp").setAttribute("disabled", "disabled");
-        document.getElementById("pass").setAttribute("disabled", "disabled");
+          for (const field in formElements) {
+            formElements[field].setAttribute("disabled", "disabled");
+          }
 
-        document.getElementById("button-submit").style.display = "none";
-        document.getElementById("button-edit").style.display = "block";
-      }
-    });
-}
+          submitButton.style.display = "none";
+          editButton.style.display = "block";
+        }
+      });
+  }
+    fetchDataAndPopulateForm();
 
