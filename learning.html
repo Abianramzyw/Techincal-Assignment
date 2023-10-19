@@ -35,7 +35,7 @@
         <a href="#" aria-label="cart" id="cart"
           ><i class="cart" data-feather="shopping-cart"></i
         ></a>
-        <div class="cart-box">
+        <!-- <div class="cart-box">
           <div class="container">
             <h2>Keranjang Anda</h2>
             <div class="cart-wrapper">
@@ -57,7 +57,7 @@
             <div class="checkout">Bayar</div>
             <div class="view-cart">Lihat Keranjang</div>
           </div>
-        </div>
+        </div> -->
         <a href="#" aria-label="profile" id="profile"
           ><i class="profile" data-feather="user"></i
         ></a>
@@ -119,36 +119,61 @@
         </div>
       </div>
       <h3>Ayo lihat pembelajaran baru!</h3>
-
-      <div class="posts-collect" id="posts-collect">
-        <div class="posts-main-container">
-          <div class="all sd">
-            <div class="post-img">
-              <img
-                src="https://i.postimg.cc/VLQqqF04/3436439683.webp"
-                alt="post"
-              />
-              <span class="category-name">sd</span>
-            </div>
-            <div class="post-content">
-              <div class="post-content-top">
-                <h2>Bahasa Indonesia</h2>
-              </div>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Accusamus recusandae aspernatur possimus illum, repellat ad
-                quasi earum, illo voluptatibus minima fugiat saepe magni
-                corporis vero eius accusantium quidem, consectetur nesciunt!
-              </p>
-              <span>Rp. 50.000</span>
-            </div>
-            <button type="button" class="btn">Masukkan Keranjang</button>
-          </div>
-        </div>
-      </div>
+      <div class="posts-collect" id="posts-collect"></div>
     </section>
 
-    list
+    <script>
+      const postscollect = document.getElementById("posts-collect");
+      let usersData = [];
+
+      const loadData = async () => {
+        try {
+          const url = await fetch(
+            "https://652a393855b137ddc83f5fe6.mockapi.io/mapel"
+          );
+          usersData = await url.json();
+          console.log(usersData);
+          loadUserData(usersData);
+        } catch (err) {
+          console.log(err);
+        }
+      };
+
+      const loadUserData = (data) => {
+        let no = 1;
+        const output = data
+          .map((el) => {
+            return `      
+    <div class="posts-main-container">
+      <div class="all ${el.category}">
+        <div class="post-img">
+          <img
+            src="${el.image}"
+            alt="post"
+          />
+          <span class="category-name">${el.category}</span>
+        </div>
+        <div class="post-content">
+          <div class="post-content-top">
+            <h2>${el.name}</h2>
+          </div>
+          <p>
+            ${el.excerpt}
+          </p>
+          <span>Rp. ${el.price}</span>
+        </div>
+        <a href="payment.html">
+        <button type="button" class="btn">Beli</button>
+        </a>
+      </div>
+    </div>
+  `;
+          })
+          .join("");
+        postscollect.innerHTML = output;
+      };
+      loadData();
+    </script>
 
     <footer>
       <footer>
