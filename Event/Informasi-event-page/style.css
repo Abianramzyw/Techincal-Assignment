@@ -1,0 +1,365 @@
+:root {
+    --primary: #1b262c;
+    --secondary: #0f4c75;
+    --info: #3282b8;
+    --other: #bbe1fa;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Lato", sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    /* min-height: 2000px; */
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 2px solid var(--other);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+  
+  .navbar .navbar-logo {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+  }
+  
+  .navbar .navbar-nav a {
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-size: 0.8rem;
+    margin: 0 1rem;
+  }
+  
+  .navbar .navbar-nav a:hover {
+    color: var(--info);
+  }
+  
+  .navbar .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.1rem;
+    border-bottom: 0.1rem solid var(--info);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+  }
+  
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+  }
+  
+  .navbar .navbar-extra a {
+    color: rgb(0, 0, 0);
+    margin: 0 0.5rem;
+  }
+  
+  .navbar .navbar-extra a:hover {
+    color: var(--info);
+  }
+  
+  .search {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .cart {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .profile {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .menu {
+    width: 20px;
+    height: 20px;
+  }
+  
+  #menu {
+    display: none;
+  }
+  
+  
+  /* ------------------------------------------------------------------------------------------- */
+ 
+  .informasi-event{
+    background-color: #ABBED1;
+    margin-top: 6%;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 25px;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2%;
+  }
+
+  .informasi-event img{
+    width: 100%;
+    height: 80%;
+    margin-right: 0px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+  }
+
+  .informasi-event p{
+    font-size: 1.1rem;
+    font-family: "Lato", sans-serif;
+    margin-top: 2em;
+    text-align: justify;
+    line-height: 1.8em;
+  }
+
+
+  #informasi-event-button{
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 0.8%;
+    padding-bottom: 0.8%;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    font-family: "Lato", sans-serif;
+    background-color: #07689F;
+    color: white;
+    margin-left: 40em;
+    margin-bottom: -20%;
+    box-shadow: 0 5px 15px #5e6163; 
+    cursor: pointer;
+  }
+
+  
+  #icon-back{
+    position: fixed;
+    width: 3.8em;
+    height: 3.5em;
+    margin-left: 5%;
+    box-shadow: 0 5px 15px #d0d9e0; 
+    border-radius: 100px;
+    cursor: pointer;
+  }
+
+  /* ------------------------------------------------------------------------------------------- */
+
+footer {
+    background-color: var(--primary);
+    text-align: center;
+    padding: 1rem 0 3rem;
+    margin-top: 3rem;
+  }
+  
+  footer .socials {
+    padding: 1rem 0;
+  }
+  
+  footer .socials a {
+    color: #fff;
+    margin: 1rem;
+  }
+  
+  footer .socials a:hover {
+    color: var(--other);
+  }
+  
+  footer .copyright {
+    font-size: 0.8rem;
+  }
+  
+  footer .copyright p {
+    color: var(--other);
+    font-weight: 700;
+  }
+
+
+
+  /* ------------------------------------------------------------------------------------------------- */
+
+  @media screen and (max-width: 1075px){
+    #informasi-event-button{
+      margin-left: 78%;
+    }
+  }
+  
+  
+  @media screen and (max-width: 1025px){
+    .informasi-event{
+      margin-top: 4.5em;
+    }
+
+    #informasi-event-button{
+      margin-top: 1em;
+      margin-left: 76%;
+    }
+  }
+
+
+  @media screen and (max-width: 850px){
+
+    #informasi-event-button{
+      margin-top: 1em;
+      margin-left: 74%;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+
+    #informasi-event-button{
+      margin-top: 1em;
+      margin-left: 73%;
+    }
+
+    .informasi-event{
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  }
+
+  @media screen and (max-width: 675px){
+
+    #informasi-event-button{
+      margin-top: 1em;
+      margin-left: 72%;
+    }
+
+  }
+
+  @media screen and (max-width: 625px){
+
+    #informasi-event-button{
+      margin-top: 1em;
+      margin-left: 70%;
+    }
+
+    .informasi-event{
+      margin-top: 6em;
+    }
+
+  }
+
+  @media screen and (max-width: 530px){
+
+    #informasi-event-button{
+      margin-top: 1em;
+      margin-left: 64%;
+    }
+
+  }
+
+  @media screen and (width: 445px){
+    #informasi-event-button{
+      margin-left: 58%;
+    }
+
+    #icon-back{
+      width: 3.5em;
+      height: 3.2em;
+    }
+
+    .informasi-event p{
+      font-size: 1rem;
+      margin-top: 1em;
+    }
+
+  }
+
+  @media screen and (max-width: 444px){
+
+    #informasi-event-button{
+      margin-left: 58%;
+      font-size: 1rem;
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-top: 1.2%;
+      padding-bottom: 1.2%;
+    }
+
+    .informasi-event{
+      margin-top: 9em;
+      margin-left: 8%;
+      margin-right: 8%;
+      padding: 0px;
+    }
+
+    #icon-back{
+      margin-left: 4%;
+      margin-top: -7%;
+      width: 3em;
+      height: 2.6em;
+    }
+
+    .informasi-event p{
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-bottom: 2px;
+    }
+   
+  }
+
+  @media screen and (max-width: 360px){
+    #icon-back{
+      width: 2.7em;
+      height: 2.4em;
+      margin-top: -8%;
+    }
+    
+    .informasi-event{
+      margin-top: 9em;
+      margin-left: 4%;
+      margin-right: 4%;
+    }
+
+    .informasi-event p{
+      font-size: 0.95rem;
+      margin-top: 1em;
+    }
+
+    #informasi-event-button{
+      margin-left: 56%;
+      font-size: 0.95rem;
+    }
+   
+  }
+
+  @media screen and (max-width: 350px){
+    #icon-back{
+      margin-top: -12%;
+    }
+    .informasi-event{
+      margin-top: 10em;
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+    #informasi-event-button{
+      margin-left: 50%;
+    }
+    
+    .informasi-event img{
+      height: 100%;
+    }
+  }
+
+
+
+
+
