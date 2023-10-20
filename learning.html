@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>OWLEARN - Learning</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-learning.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="navbar-logo">OWLEARN</a>
+      <div class="navbar-nav">
+        <a href="index.html">HOME</a>
+        <a href="learning.html">LEARNING</a>
+        <a href="./Event/Event-page/index.html">EVENT</a>
+        <a href="index.html#about">ABOUT US</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" aria-label="search" id="search"
+          ><i class="search" data-feather="search"></i
+        ></a>
+        <a href="#" aria-label="cart" id="cart"
+          ><i class="cart" data-feather="shopping-cart"></i
+        ></a>
+        <a href="#" aria-label="profile" id="profile"
+          ><i class="profile" data-feather="user"></i
+        ></a>
+        <a href="#" aria-label="menu" id="menu"
+          ><i class="menu" data-feather="menu"></i
+        ></a>
+      </div>
+    </nav>
+
+    <!-- <section class="subject">
+      <div class="posts-collect">
+        <h3>Lanjutkan pembelajaran Anda!</h3>
+        <div class="posts-main-container">
+          <div class="sd">
+            <div class="post-img">
+              <img
+                src="https://i.postimg.cc/VLQqqF04/3436439683.webp"
+                alt="post"
+              />
+              <span class="category-name">sd</span>
+            </div>
+            <div class="post-content">
+              <div class="post-content-top">
+                <h2>Bahasa Indonesia</h2>
+              </div>
+            </div>
+            <button type="button" class="btn">Lanjutkan</button>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="subjects">
+      <div class="container">
+        <div class="category-container">
+          <div class="category">
+            <ul>
+              <li class="kategori">Kategori</li>
+              <div class="category-title active" id="all">
+                <li>Semua</li>
+              </div>
+              <div class="category-title" id="sd">
+                <li>SD</li>
+              </div>
+              <div class="category-title" id="smp">
+                <li>SMP</li>
+              </div>
+              <div class="category-title" id="sma">
+                <li>SMA</li>
+              </div>
+              <div class="category-title" id="smk">
+                <li>SMK</li>
+              </div>
+              <div class="category-title" id="univ">
+                <li>UNIV</li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h3>Ayo lihat pembelajaran baru!</h3>
+      <div class="posts-collect" id="posts-collect"></div>
+    </section>
+
+    <script>
+      const postscollect = document.getElementById("posts-collect");
+      let usersData = [];
+
+      const loadData = async () => {
+        try {
+          const url = await fetch(
+            "https://652a393855b137ddc83f5fe6.mockapi.io/mapel"
+          );
+          usersData = await url.json();
+          console.log(usersData);
+          loadUserData(usersData);
+        } catch (err) {
+          console.log(err);
+        }
+      };
+
+      const loadUserData = (data) => {
+        let no = 1;
+        const output = data
+          .map((el) => {
+            return `     
+
+            <div class="wrapper">
+      <div class="posts-main-container">
+        <div class="all ${el.category}">
+          <div class="post-img">
+            <img src="${el.image}" alt="post" />
+            <span class="category-name">${el.category}</span>
+          </div>
+          <div class="post-content">
+            <div class="post-content-top">
+              <h2>${el.name}</h2>
+            </div>
+            <p>${el.excerpt}</p>
+            <span>Rp. ${el.price}</span>
+          </div>
+          <a href="payment.html">
+            <button type="button" class="btn">Beli</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  
+
+  `;
+          })
+          .join("");
+        postscollect.innerHTML = output;
+      };
+      loadData();
+    </script>
+    <footer>
+      <footer>
+        <div class="socials">
+          <a href="https://www.instagram.com/abianramzy/" aria-label="instagram"
+            ><i data-feather="instagram"></i
+          ></a>
+          <a href="https://twitter.com/VVijaya_" aria-label="twitter"
+            ><i data-feather="twitter"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/abian-ramzy-wijaya-b04a93181/"
+            aria-label="linkedin"
+            ><i data-feather="linkedin"></i
+          ></a>
+          <a href="https://www.youtube.com/@abianramzyYT" aria-label="youtube"
+            ><i data-feather="youtube"></i
+          ></a>
+        </div>
+
+        <div class="copyright">
+          <p>Copyright @ 2023 All rights reserved</p>
+        </div>
+      </footer>
+    </footer>
+
+    <script>
+      feather.replace();
+    </script>
+
+    <script src="js/script-learning.js"></script>
+  </body>
+</html>

@@ -1,0 +1,411 @@
+:root {
+  --primary: #1b262c;
+  --secondary: #0f4c75;
+  --info: #3282b8;
+  --other: #bbe1fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  /* min-height: 2000px; */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 7%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom: 2px solid var(--other);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}
+
+.navbar .navbar-nav a {
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  font-size: 0.8rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--info);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.1rem;
+  border-bottom: 0.1rem solid var(--info);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: rgb(0, 0, 0);
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--info);
+}
+
+.search {
+  width: 20px;
+  height: 20px;
+}
+
+.cart {
+  width: 20px;
+  height: 20px;
+}
+
+.profile {
+  width: 20px;
+  height: 20px;
+}
+
+.menu {
+  width: 20px;
+  height: 20px;
+}
+
+#menu {
+  display: none;
+}
+
+
+/* ------------------------------------------------------------------------------------------- */
+
+#icon-back{
+  position: fixed;
+  width: 4.5%;
+  height: 9%;
+  margin-left: 5%;
+  box-shadow: 0 5px 15px #d0d9e0; 
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.room-profil {
+  margin: 6em auto;
+  margin-bottom: 2em;
+  margin-top: 4.5em;
+  border: 2px solid whitesmoke;
+  border-radius: 12px;
+  background-color: #89939E;
+  padding: 2.5%;
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.data input {
+  border-radius: 8px;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  width: 18.5em;
+  height: 1.6em;
+  font-size: 1.1rem;
+  font-family: "Lato", sans-serif;
+  text-align: left; 
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.data label {
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  font-family: "Lato", sans-serif;
+  text-align: left; 
+}
+
+#button-edit {
+  margin-top: 2.5em;
+  border-radius: 12px;
+  width: 12em;
+  height: 2em;
+  background-color: #07689F;
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  font-family: "Lato", sans-serif;
+  box-shadow: 0 5px 15px #5e6163;
+  cursor: pointer;
+}
+
+#button-submit {
+  margin-top: 2.5em;
+  border-radius: 12px;
+  width: 12em;
+  height: 2em;
+  background-color: #07689F;
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  font-family: "Lato", sans-serif;
+  box-shadow: 0 5px 15px #5e6163;
+  cursor: pointer;
+}
+
+#button-logout {
+  width: 10em;
+  height: 3em;
+  border-radius: 12px;
+  margin-left: 54%;
+  background-color: #EB5757;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  box-shadow: 0 5px 15px #d0d9e0;
+  cursor: pointer;
+}
+
+#notifikasi {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #25AE60;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-size: 1.1rem;
+  font-family: "Lato", sans-serif;
+}
+
+footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1rem 0 3rem;
+  margin-top: 3rem;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .socials a:hover {
+  color: var(--other);
+}
+
+footer .copyright {
+  font-size: 0.8rem;
+}
+
+footer .copyright p {
+  color: var(--other);
+  font-weight: 700;
+}
+
+
+@media screen and (max-width: 1075px){
+  .room-profil {
+    width: 35%;
+  }
+  .data label {
+    font-size: 1rem;
+  }
+  .data input {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    width: 18.4em;
+    height: 1.5em;
+    font-size: 1rem;
+  }
+  #button-edit {
+    margin-top: 2.3em;
+    font-size: 1rem;
+  }
+  #button-logout {
+    width: 8em;
+    height: 3em;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1025px){
+  .room-profil {
+    width: 36%;
+  }
+  #icon-back{
+    width: 5%;
+  }
+}
+
+@media screen and (max-width: 880px){
+  .room-profil {
+    width: 41%;
+  }
+  #icon-back{
+    width: 6%;
+  }
+  #button-logout {
+    margin-left: 55%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .room-profil {
+    width: 46%;
+  }
+  #icon-back{
+    width: 7%;
+  }
+  #button-logout {
+    margin-left: 56%;
+  }
+}
+
+@media screen and (max-width: 675px){
+  .room-profil {
+    width: 51%;
+  }
+  #icon-back{
+    width: 8%;
+  }
+}
+
+@media screen and (max-width: 625px){
+  .room-profil {
+    margin-top: 6em;
+    width: 55%;
+  }
+  #button-edit {
+    margin-top: 1.5em;
+  }
+  #icon-back{
+    height: 9.5%;
+    width: 8.5%;
+  }
+}
+
+@media screen and (max-width: 551px){
+  .room-profil {
+    width: 70%;
+    margin-top: 8em;
+    padding-top: 2em;
+    padding-bottom: 2.5em;
+  }
+  #icon-back{
+    height: 10.5%;
+    width: 13%;
+    margin-top: -2em;
+  }
+  #button-logout {
+    margin-left: 57%;
+  }
+}
+
+@media screen and (width: 460px){
+  .room-profil {
+    width: 78%;
+    margin-top: 8em;
+    padding-top: 2em;
+    padding-bottom: 2.5em;
+  }
+  #button-edit {
+    width: 11em;
+    height: 2em;
+  }
+  #button-submit {
+    width: 11em;
+    height: 2em;
+  }
+  #icon-back{
+    height: 10%;
+    width: 12%;
+    margin-top: -2em;
+  }
+}
+
+@media screen and (width: 445px){
+  .room-profil {
+    width: 76%;
+    margin-top: 8.5em;
+    padding-top: 2em;
+    padding-bottom: 2.5em;
+  }
+  #icon-back{
+    height: 10%;
+    width: 12.5%;
+    margin-top: -2.5em;
+  }
+}
+
+@media screen and (max-width: 444px){
+  .room-profil {
+    width: 77%;
+    margin-top: 9.5em;
+    height: 37em;
+    padding-top: 2em;
+    
+  }
+  #icon-back{
+    width: 12.5%;
+    margin-top: -2.3em;
+  }
+  #button-logout {
+    margin-left: 58%;
+  }
+}
+
+@media screen and (max-width: 360px){
+  .room-profil {
+    width: 95%;
+    margin-top: 1em;
+  }
+  #icon-back{
+    width: 16%;
+    margin-top: 7.5em;
+    position: relative;
+  }
+  #notifikasi {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #icon-back{
+    margin-top: 8.2em;
+  }
+  
+}
+
+
