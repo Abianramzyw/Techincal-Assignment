@@ -128,7 +128,7 @@ function loginAkun() {
         notifikasi.style.display = "none";
       }, 1000);
       setTimeout(function () {
-        window.location.href = "../learning.html";
+        window.location.href = "../../learning.html";
       }, 3000);
     })
     .catch((error) => {
